@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+# Avis de relecteurs : à versionner ou non selon votre choix
+# avis_externes.csv

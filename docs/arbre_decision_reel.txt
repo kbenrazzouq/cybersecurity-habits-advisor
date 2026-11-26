@@ -1,0 +1,148 @@
+Arbre RÉEL utilisé par l'application (profondeur 19, 233 nœuds)
+Valeurs 0 = Non, 0.5 = Parfois, 1 = Oui.  Les ctx_* valent 0 ou 1.
+
+|--- a2f <= 0.25
+|   |--- class: a2f
+|--- a2f >  0.25
+|   |--- mdp_unique <= 0.25
+|   |   |--- sources <= 0.25
+|   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |--- ctx_banque <= 0.50
+|   |   |   |   |   |--- class: sources
+|   |   |   |   |--- ctx_banque >  0.50
+|   |   |   |   |   |--- class: mdp_unique
+|   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |--- class: mdp_unique
+|   |   |--- sources >  0.25
+|   |   |   |--- class: mdp_unique
+|   |--- mdp_unique >  0.25
+|   |   |--- sources <= 0.25
+|   |   |   |--- maj <= 0.25
+|   |   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |   |--- class: sources
+|   |   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |   |--- phishing <= 0.25
+|   |   |   |   |   |   |--- ctx_banque <= 0.50
+|   |   |   |   |   |   |   |--- class: maj
+|   |   |   |   |   |   |--- ctx_banque >  0.50
+|   |   |   |   |   |   |   |--- class: phishing
+|   |   |   |   |   |--- phishing >  0.25
+|   |   |   |   |   |   |--- class: maj
+|   |   |   |--- maj >  0.25
+|   |   |   |   |--- phishing <= 0.25
+|   |   |   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |   |   |--- class: sources
+|   |   |   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |   |   |--- class: phishing
+|   |   |   |   |--- phishing >  0.25
+|   |   |   |   |   |--- class: sources
+|   |   |--- sources >  0.25
+|   |   |   |--- phishing <= 0.25
+|   |   |   |   |--- maj <= 0.25
+|   |   |   |   |   |--- ctx_banque <= 0.50
+|   |   |   |   |   |   |--- class: maj
+|   |   |   |   |   |--- ctx_banque >  0.50
+|   |   |   |   |   |   |--- class: phishing
+|   |   |   |   |--- maj >  0.25
+|   |   |   |   |   |--- class: phishing
+|   |   |   |--- phishing >  0.25
+|   |   |   |   |--- maj <= 0.25
+|   |   |   |   |   |--- class: maj
+|   |   |   |   |--- maj >  0.25
+|   |   |   |   |   |--- wifi <= 0.25
+|   |   |   |   |   |   |--- gestionnaire <= 0.25
+|   |   |   |   |   |   |   |--- ctx_pro <= 0.50
+|   |   |   |   |   |   |   |   |--- ctx_banque <= 0.50
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- mdp_long <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: mdp_long
+|   |   |   |   |   |   |   |   |   |   |--- mdp_long >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: wifi
+|   |   |   |   |   |   |   |   |--- ctx_banque >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: wifi
+|   |   |   |   |   |   |   |--- ctx_pro >  0.50
+|   |   |   |   |   |   |   |   |--- class: gestionnaire
+|   |   |   |   |   |   |--- gestionnaire >  0.25
+|   |   |   |   |   |   |   |--- ctx_banque <= 0.50
+|   |   |   |   |   |   |   |   |--- mdp_long <= 0.25
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: mdp_long
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: wifi
+|   |   |   |   |   |   |   |   |--- mdp_long >  0.25
+|   |   |   |   |   |   |   |   |   |--- verrouillage <= 0.25
+|   |   |   |   |   |   |   |   |   |   |--- ctx_etudiant <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: verrouillage
+|   |   |   |   |   |   |   |   |   |   |--- ctx_etudiant >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: wifi
+|   |   |   |   |   |   |   |   |   |--- verrouillage >  0.25
+|   |   |   |   |   |   |   |   |   |   |--- class: wifi
+|   |   |   |   |   |   |   |--- ctx_banque >  0.50
+|   |   |   |   |   |   |   |   |--- class: wifi
+|   |   |   |   |   |--- wifi >  0.25
+|   |   |   |   |   |   |--- mdp_long <= 0.25
+|   |   |   |   |   |   |   |--- gestionnaire <= 0.25
+|   |   |   |   |   |   |   |   |--- ctx_pro <= 0.50
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: mdp_long
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- sauvegarde <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: sauvegarde
+|   |   |   |   |   |   |   |   |   |   |--- sauvegarde >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: mdp_long
+|   |   |   |   |   |   |   |   |--- ctx_pro >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: gestionnaire
+|   |   |   |   |   |   |   |--- gestionnaire >  0.25
+|   |   |   |   |   |   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: mdp_long
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: sauvegarde
+|   |   |   |   |   |   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |   |   |   |   |   |--- class: mdp_long
+|   |   |   |   |   |   |--- mdp_long >  0.25
+|   |   |   |   |   |   |   |--- verrouillage <= 0.75
+|   |   |   |   |   |   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- verrouillage <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- verrouillage >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- ctx_etudiant >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: sauvegarde
+|   |   |   |   |   |   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |   |   |   |   |   |--- verrouillage <= 0.25
+|   |   |   |   |   |   |   |   |   |   |--- gestionnaire <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- gestionnaire >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: verrouillage
+|   |   |   |   |   |   |   |   |   |--- verrouillage >  0.25
+|   |   |   |   |   |   |   |   |   |   |--- gestionnaire <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: gestionnaire
+|   |   |   |   |   |   |   |   |   |   |--- gestionnaire >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |--- verrouillage >  0.75
+|   |   |   |   |   |   |   |   |--- gestionnaire <= 0.75
+|   |   |   |   |   |   |   |   |   |--- gestionnaire <= 0.25
+|   |   |   |   |   |   |   |   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: gestionnaire
+|   |   |   |   |   |   |   |   |   |--- gestionnaire >  0.25
+|   |   |   |   |   |   |   |   |   |   |--- sauvegarde <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: sauvegarde
+|   |   |   |   |   |   |   |   |   |   |--- sauvegarde >  0.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- gestionnaire >  0.75
+|   |   |   |   |   |   |   |   |   |--- sauvegarde <= 0.75
+|   |   |   |   |   |   |   |   |   |   |--- mdp_unique <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- mdp_unique >  0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- sauvegarde >  0.75
+|   |   |   |   |   |   |   |   |   |   |--- antivirus <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- antivirus >  0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9

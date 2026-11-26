@@ -1,0 +1,3 @@
+# Aucune télémétrie : l'outil affirme ne rien envoyer, la configuration doit le garantir.
+[browser]
+gatherUsageStats = false

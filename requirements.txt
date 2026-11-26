@@ -1,0 +1,5 @@
+# Versions épinglées (celles de l'environnement d'origine) : reproductibilité et maîtrise de la chaîne d'approvisionnement.
+# scikit-learn et matplotlib ne servent qu'à l'entraînement, aux tests et aux figures ; l'application lit un modèle JSON.
+streamlit==1.65.0
+scikit-learn==1.7.2
+matplotlib==3.10.9
