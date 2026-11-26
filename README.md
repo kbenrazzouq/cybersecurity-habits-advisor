@@ -48,3 +48,12 @@ Techniques: **rule-based system** + **profile-based recommendation** (score, cap
 Add a dictionary to `QUESTIONS` (`moteur.py`) with: `id`, `categorie`, `gravite` (1-5), `effort` (1-3), `question`,
 `risque`, `conseil`, `sources` (keys of `SOURCES`). Then run `python entrainer.py` and `python -m unittest test_moteur`
 again. An outdated model (questions changed) is rejected at load time and automatically retrained.
+
+## Teamwork
+Each member must commit with their own identity (`git config user.name "First Last"`). Each person's contribution can then
+be read with `git log --format="%an | %s"`. The `.venv` folder must never be versioned or submitted (see `.gitignore`).
+
+## Authors
+- @kbenrazzouq
+- @Fadwa-hub211
+- @salmagarboune
