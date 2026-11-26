@@ -54,6 +54,6 @@ Each member must commit with their own identity (`git config user.name "First La
 be read with `git log --format="%an | %s"`. The `.venv` folder must never be versioned or submitted (see `.gitignore`).
 
 ## Authors
-- @kbenrazzouq
-- @Fadwa-hub211
-- @salmagarboune
+- [@kbenrazzoug](https://github.com/kbenrazzoug)
+- [@Fadwa-hub211](https://github.com/Fadwa-hub211)
+- [@salmagarboune](https://github.com/salmagarboune)
